@@ -818,6 +818,7 @@
 				clock-names = "ipg", "ahb";
 				#dma-cells = <3>;
 				fsl,sdma-ram-script-name = "imx/sdma/sdma-imx6q.bin";
+                startup-delay-us = <3000000>;
 			};
 
 			pwm5: pwm@20f0000 {
