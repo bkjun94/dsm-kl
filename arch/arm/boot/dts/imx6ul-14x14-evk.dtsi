@@ -42,7 +42,6 @@
 	};
     */
 
-    /* 
 	reg_sd1_vmmc: regulator-sd1-vmmc {
 		compatible = "regulator-fixed";
 		regulator-name = "VSD_3V3";
@@ -52,7 +51,6 @@
 		off-on-delay-us = <20000>;
 		enable-active-high;
 	};
-    */
 
     /* 
 	reg_peri_3v3: regulator-peri-3v3 {
@@ -162,7 +160,7 @@
 
 &csi {
 	//status = "disabled";
-    status = "okay";
+	status = "okay";
 
 	port {
 		csi1_ep: endpoint {

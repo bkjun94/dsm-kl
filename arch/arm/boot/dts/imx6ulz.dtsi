@@ -24,8 +24,8 @@
 /delete-node/ &ecspi4;
 /delete-node/ &epit2;
 /delete-node/ &gpt2;
-/delete-node/ &i2c3;
-/delete-node/ &i2c4;
+///delete-node/ &i2c3;
+///delete-node/ &i2c4;
 /delete-node/ &pwm5;
 /delete-node/ &pwm6;
 /delete-node/ &pwm7;
