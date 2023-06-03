@@ -118,12 +118,10 @@
 		audio-asrc = <&asrc>;
 		//hp-det-gpio = <&gpio5 4 0>;
 		audio-routing =
-			"Ext Spk", "OUT",
-			//"Mic Jack", "MICL",
-			//"Mic Jack", "MICR";
-			"MICL", "Mic Jack",
-			"MICR", "Mic Jack";
-			//"AMIC", "MICB";
+			"Mic Jack", "AIFOUTL",
+			"Mic Jack", "AIFOUTR",
+			"Ext Spk", "AIFINL",
+			"Ext Spk", "AIFINR";
 	};
 
     /* 
