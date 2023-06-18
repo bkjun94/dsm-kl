@@ -265,8 +265,10 @@ static int max9860_hw_params(struct snd_pcm_substream *substream,
 		params_rate(params),
 		params_channels(params));
 
+#if 0// FDSM:BK: Fixed stereo noisy issue.
 	if (params_channels(params) == 2)
 		ifc1b |= MAX9860_ST;
+#endif
 
 	switch (max9860->fmt & SND_SOC_DAIFMT_CLOCK_PROVIDER_MASK) {
 	case SND_SOC_DAIFMT_CBC_CFC:
