@@ -117,11 +117,10 @@
 		audio-codec = <&codec>;
 		audio-asrc = <&asrc>;
 		//hp-det-gpio = <&gpio5 4 0>;
+		codec-master;
 		audio-routing =
-			"Mic Jack", "AIFOUTL",
-			"Mic Jack", "AIFOUTR",
-			"Ext Spk", "AIFINL",
-			"Ext Spk", "AIFINR";
+			"Line Out Jack", "OUT",
+			"MICR", "Line In Jack";
 	};
 
     /* 
@@ -257,8 +256,8 @@
 		#sound-dai-cells = <0>;
 		compatible = "maxim,max9860";
 		reg = <0x10>;
-        interrupt-parent = <&gpio5>;
-        interrupts = <4 IRQ_TYPE_EDGE_FALLING>;
+        // interrupt-parent = <&gpio5>;
+        // interrupts = <4 IRQ_TYPE_EDGE_FALLING>;
 
 		//wlf,shared-lrclk;
 		//wlf,hp-cfg = <3 2 3>;
