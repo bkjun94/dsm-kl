@@ -1692,7 +1692,8 @@ static int ioctl_g_chip_ident(struct v4l2_int_device *s, int *id)
 {
 	((struct v4l2_dbg_chip_ident *)id)->match.type =
 					V4L2_CHIP_MATCH_I2C_DRIVER;
-	strcpy(((struct v4l2_dbg_chip_ident *)id)->match.name, "ov5640_camera");
+	strcpy(((struct v4l2_dbg_chip_ident *)id)->match.name,"ov5640_camera");
+	((struct v4l2_dbg_chip_ident *)id)->ident = V4L2_IDENT_OV5640;
 
 	return 0;
 }
