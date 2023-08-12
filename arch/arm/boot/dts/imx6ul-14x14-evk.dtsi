@@ -120,6 +120,7 @@
 		codec-master;
 		audio-routing =
 			"Line Out Jack", "OUT",
+			"MICL", "Line In Jack",
 			"MICR", "Line In Jack";
 	};
 

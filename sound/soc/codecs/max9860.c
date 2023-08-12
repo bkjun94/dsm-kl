@@ -59,7 +59,11 @@ static const struct reg_default max9860_reg_defaults[] = {
 	{ MAX9860_DACATTN,      0x00 },
 	{ MAX9860_ADCLEVEL,     0x00 },
 	{ MAX9860_DACGAIN,      0x00 },
+#if 1//BK: Configured default MICGAIN to enable the microphone input that Mic Preamp being set maximum.
+	{ MAX9860_MICGAIN,      0x60 },
+#else
 	{ MAX9860_MICGAIN,      0x00 },
+#endif
 	{ MAX9860_MICADC,       0x00 },
 	{ MAX9860_NOISEGATE,    0x00 },
 };
