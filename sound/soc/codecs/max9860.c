@@ -389,8 +389,10 @@ static int max9860_hw_params(struct snd_pcm_substream *substream,
 				break;
 			}
 
+#if 0//BK: Fixed 16Kbps not working issue.
 			if (sysclk && params_rate(params) == 16000)
 				sysclk |= MAX9860_16KHZ;
+#endif
 		}
 	}
 
